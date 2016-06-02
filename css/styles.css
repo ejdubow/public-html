@@ -1,0 +1,61 @@
+/* Global */
+.center {
+  margin: auto;
+}
+.float-r {
+	float: right;
+	text-align: right;
+}
+
+/* Fonts */
+body, h1, h2, h3, h4, h5, h6 {
+	color: #FFFFFF;
+	line-height: 24px;
+}
+a {
+	text-decoration: none;
+}
+.pink {
+	color: #FF3766;
+}
+.gray {
+	color: #8B8B8B;
+}
+.white {
+	color: #FFFFFF;
+}
+h2 {
+	font-family: Raleway-Light;
+	font-size: 36px;
+}
+h4 {
+	font-family: Raleway;
+	font-size: 18px;
+}
+h6 {
+	font-family: Raleway-Light;
+	font-size: 14px;		
+}
+
+/* Hero */
+.hero {
+	background: url(../images/hero-bg.png)repeat-x;
+	max-height: 676px;
+	overflow: hidden;
+}
+
+.hero-content img {
+	width: 100%;
+}
+.hero-text {
+	z-index: 10;
+	margin-top: -160px;
+}
+.hero-text h2, .hero-text h6 {
+	text-align: center;
+	line-height: 15px;
+}
+.em-melon img {
+	z-index: 10;
+	margin-top: -400px;
+}
