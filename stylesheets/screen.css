@@ -1,0 +1,136 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* Global */
+/* line 9, ../sass/screen.scss */
+.center {
+  margin: auto; }
+
+/* line 12, ../sass/screen.scss */
+.float-r {
+  float: right;
+  text-align: right; }
+
+/* Fonts */
+/* line 18, ../sass/screen.scss */
+body, h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+  line-height: 24px; }
+
+/* line 22, ../sass/screen.scss */
+a {
+  text-decoration: none; }
+
+/* line 25, ../sass/screen.scss */
+.pink {
+  color: #FF3766; }
+
+/* line 28, ../sass/screen.scss */
+.gray {
+  color: #8B8B8B; }
+
+/* line 31, ../sass/screen.scss */
+.white {
+  color: #FFFFFF; }
+
+/* line 34, ../sass/screen.scss */
+h2 {
+  font-family: Raleway-Light;
+  font-size: 36px; }
+
+/* line 38, ../sass/screen.scss */
+h4 {
+  font-family: Raleway;
+  font-size: 18px;
+  margin-top: 30px; }
+
+/* line 43, ../sass/screen.scss */
+h6 {
+  font-family: Raleway-Light;
+  font-size: 14px; }
+
+/* Hero */
+/* line 49, ../sass/screen.scss */
+.hero {
+  background: url(../images/hero-bg.png) repeat-x;
+  max-height: 676px;
+  overflow: hidden; }
+  /* line 53, ../sass/screen.scss */
+  .hero .nav h4 {
+    margin-top: 30px; }
+
+/* line 58, ../sass/screen.scss */
+.hero-content img {
+  width: 100%; }
+
+/* line 61, ../sass/screen.scss */
+.hero-text {
+  z-index: 10;
+  margin-top: -160px; }
+
+/* line 65, ../sass/screen.scss */
+.hero-text h2, .hero-text h6 {
+  text-align: center;
+  line-height: 15px; }
+
+/* line 69, ../sass/screen.scss */
+.em-melon img {
+  z-index: 10;
+  margin-top: -400px; }
