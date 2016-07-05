@@ -39,7 +39,7 @@ h6 {
 
 /* Hero */
 .hero {
-	background: url(../images/hero-bg.png)repeat-x;
+	background: url(../images/ocean-mix.svg) #DF0067 repeat-x;
 	max-height: 676px;
 	overflow: hidden;
 }
