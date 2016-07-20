@@ -11,6 +11,7 @@ $gray: 	#8B8B8B;
 $pink:	#FF3766;
 $green:	#54B400;
 $green-lt:	#D8FD94;
+$charcoal: #2F2F2F;
 
 /* Global */
 body {
@@ -36,12 +37,12 @@ a {
 	color: $cream;
 	&:hover {
 		color: $green-lt;
-	    transform: scale(3);
 	}
 }
 h2 {
 	font-family: Raleway-Light;
 	font-size: 36px;
+    line-height: 45px;
 }
 h3 {
 	font-family: Raleway-Light;
@@ -66,8 +67,9 @@ p {
 	position: absolute;
 	z-index: -10;
 	width: 100%;
+	height: 100%;
     overflow: hidden;
-    -webkit-animation: hue 35s infinite ease-in-out;
+    -webkit-animation: hue 20s infinite ease-in-out;
     img {
      	-webkit-animation: animatedBackground 500s infinite ease-out;
      	width: 100%;
@@ -78,23 +80,19 @@ p {
 .hero {
 	// background: url(../images/ocean-mix.svg) #DF0067;
 	background-size: 85%;
-	max-height: 676px;
-	min-height: 400px;
+	max-height: 605px;
+	min-height: 335px;
 	overflow: hidden;
 	position: relative;
 	z-index: 10;
     // -webkit-animation: hue 42s infinite ease-in-out;
-	.nav h4 {
-		margin-top: 30px;
+	h4 {
+		margin-top: 20px;
 		color: $cream;
+		float: right;
 	}
 	h1 {
-		margin-top: 80px;
-	}
-	h2 {
-		margin-top: 10px;
-		line-height: 42px;
-		margin-bottom: 3px;
+		margin-top: 60px;
 	}
 	.logo-em {
 	    animation: pulse 5s linear infinite alternate;
@@ -118,15 +116,14 @@ p {
 		right: 10%;
 		top: 50%;
 		img {
-			animation: seeds 5s linear infinite;
+			&:hover {
+				animation: zoomOutDown 2s ease-in;
+			}
 		}
 	}
 }
 .melon-top {
-	margin-top: 90px;
-	img {
-		margin: 42px;
-	}
+	margin-top: 80px;
 }
 .green-border {
 	height: 7px;
@@ -150,10 +147,8 @@ p {
 	padding-top: 15px;
 	background: $cream;
 	h2 {
-	    margin-top: -95px;
-		margin-bottom: 18px;
+		margin-bottom: 20px;
 	}
-
 	.grid-item {
 		/* Rectangle 2: */
 		background: #D8D8D8;
@@ -171,6 +166,11 @@ p {
 			transform: color($green);
 		}
 	}
+	h6 {
+	    max-width: 430px;
+    	margin: auto;
+    	margin-bottom: 30px;
+	}
 }
 .grid {
 	margin-bottom: 30px;
@@ -178,6 +178,7 @@ p {
 
 .portfolio-content {
 	background: $cream;
+    overflow: hidden;
 }
 .cbp-l-filters-alignCenter{
 	background: $cream;
@@ -216,5 +217,144 @@ p {
 }
 
 
+/* Larger than mobile */
+@media (min-width: 200px) and (max-width: 379px) {
+	.hero {
+		.em-img {
+			img {
+				width: 200px;
+				margin-top: -50px;
+			}
+		}
+		h1 {
+			margin-top: 10px;
+			.logo-em img {
+				height: 180px;
+    			width: 180px;
+			}
+		}
+		h4 {
+			display: none;
+			text-align: center;
+			margin: 10px auto 0;
+			float: none;
+		}
+		.melon-top {
+	    	margin-top: 5px;
+	    	img {
+	    		width: 70%;
+    		    margin-bottom: -65%;
+	    	}
+		}
+		.seeds {
+			img {
+				width: 55%;
+			}
+		}
+	}
+}
 
+@media (min-width: 380px) and (max-width: 449px) {
+	.hero {
+		.em-img {
+			img {
+				width: 200px;
+				margin-top: -50px;
+			}
+		}
+		h1 {
+			margin-top: 10px;
+			.logo-em img {
+				height: 180px;
+    			width: 180px;
+			}
+		}
+		h4 {
+			display: none;
+			text-align: center;
+			margin: 10px auto 0;
+			float: none;
+		}
+		.melon-top {
+	    	margin-top: 5px;
+	    	img {
+	    		width: 70%;
+    		    margin-bottom: -55%;
+	    	}
+		}
+		.seeds {
+			img {
+				width: 55%;
+			}
+		}
+	}
+}	
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 450px) and (max-width: 749px) {
+	.hero {
+		.em-img {
+			img {
+				width: 300px;
+				margin-top: -50px;
+			}
+		}
+		h1 {
+			margin-top: 10px;
+			.logo-em img {
+				height: 180px;
+    			width: 180px;
+			}
+		}
+		h4 {
+			display: none;
+			text-align: center;
+			margin: 10px auto 0;
+			float: none;
+		}
+		.melon-top {
+	    	margin-top: 5px;
+	    	img {
+	    		width: 90%;
+    		    margin-bottom: -60%;
+	    	}
+		}
+		.seeds {
+			img {
+				width: 55%;
+			}
+		}
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) and (max-width: 1000px) {
+	.em-img {
+		img {
+			width: 450px;
+		}
+	}
+	.hero {
+		h1 {
+		    margin-top: 10px;
+		    padding-left: 80px; 
+		    .logo-em img {
+    			height: 300px;
+    			width: 300px;
+			}
+		}
+	}
+	.melon-top {
+    	margin-top: 165px;
+    	img {
+    		width: 80%;
+    	}
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
 

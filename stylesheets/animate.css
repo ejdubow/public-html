@@ -1,19 +1,11 @@
 @charset "UTF-8";
 
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.1
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2016 Daniel Eden
- */
-
-@keyframes seeds {
-  from {
-      fill: #ffffff;
+@-webkit-keyframes animatedFooter {
+  0% {
+      background-position: 0px 0px;
     } 
-  to {
-      fill: #cccccc;
+  100% {
+      background-position: 10000px 0px;
     }
 }
 
@@ -26,6 +18,20 @@
     }
 }
 
+@-webkit-keyframes animatedBackground {
+  0% {
+      transform: rotate(0deg); 
+      opacity: 1;
+    }
+    50% {
+      transform: rotate(180deg);
+      opacity: 0.7;  
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+}
 
 @keyframes animatedBackground {
   0% {
@@ -42,19 +48,25 @@
     }
 }
 
+@-webkit-keyframes hue {
+  0% {
+    background-color: #DF0067;
+  }
+  50% {
+    background-color: #FF314C;
+  }
+  100% {
+    background-color: #DF0067;
+  }
+}
+
 @keyframes hue {
   0% {
     background-color: #DF0067;
   }
-/*  40% {
-    background-color: #DF003F;
-  }*/
   50% {
     background-color: #FF314C;
   }
-/*  80% {
-    background-color: #DF003F;
-  }*/
   100% {
     background-color: #DF0067;
   }
